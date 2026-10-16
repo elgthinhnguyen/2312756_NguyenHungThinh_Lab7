@@ -1,0 +1,263 @@
+﻿mobile-test-job	Set up job	﻿2026-10-16T08:22:17.9892148Z Current runner version: '2.337.0'
+mobile-test-job	Set up job	2026-10-16T08:22:17.9912995Z ##[group]Runner Image Provisioner
+mobile-test-job	Set up job	2026-10-16T08:22:17.9913850Z Hosted Compute Agent
+mobile-test-job	Set up job	2026-10-16T08:22:17.9914383Z Version: 20261012.601
+mobile-test-job	Set up job	2026-10-16T08:22:17.9914967Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+mobile-test-job	Set up job	2026-10-16T08:22:17.9915594Z Build Date: 2026-10-12T17:48:21Z
+mobile-test-job	Set up job	2026-10-16T08:22:17.9916636Z Worker ID: {e17ee0e7-7932-4b3c-8dbd-51bf56e82f5a}
+mobile-test-job	Set up job	2026-10-16T08:22:17.9917243Z Region: centralus
+mobile-test-job	Set up job	2026-10-16T08:22:17.9917773Z Cloud: Azure
+mobile-test-job	Set up job	2026-10-16T08:22:17.9918256Z ##[endgroup]
+mobile-test-job	Set up job	2026-10-16T08:22:17.9919528Z ##[group]Operating System
+mobile-test-job	Set up job	2026-10-16T08:22:17.9920035Z Ubuntu
+mobile-test-job	Set up job	2026-10-16T08:22:17.9920453Z 24.04.5
+mobile-test-job	Set up job	2026-10-16T08:22:17.9920894Z LTS
+mobile-test-job	Set up job	2026-10-16T08:22:17.9921342Z ##[endgroup]
+mobile-test-job	Set up job	2026-10-16T08:22:17.9921858Z ##[group]Runner Image
+mobile-test-job	Set up job	2026-10-16T08:22:17.9922405Z Image: ubuntu-24.04
+mobile-test-job	Set up job	2026-10-16T08:22:17.9922855Z Version: 20261012.334.1
+mobile-test-job	Set up job	2026-10-16T08:22:17.9923766Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+mobile-test-job	Set up job	2026-10-16T08:22:17.9925198Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+mobile-test-job	Set up job	2026-10-16T08:22:17.9926081Z ##[endgroup]
+mobile-test-job	Set up job	2026-10-16T08:22:17.9926993Z ##[group]GITHUB_TOKEN Permissions
+mobile-test-job	Set up job	2026-10-16T08:22:17.9928962Z Contents: read
+mobile-test-job	Set up job	2026-10-16T08:22:17.9929427Z Metadata: read
+mobile-test-job	Set up job	2026-10-16T08:22:17.9930181Z ##[endgroup]
+mobile-test-job	Set up job	2026-10-16T08:22:17.9931908Z Secret source: Actions
+mobile-test-job	Set up job	2026-10-16T08:22:17.9932712Z Cache mode: write
+mobile-test-job	Set up job	2026-10-16T08:22:17.9933252Z Prepare workflow directory
+mobile-test-job	Set up job	2026-10-16T08:22:18.0238335Z Prepare all required actions
+mobile-test-job	Set up job	2026-10-16T08:22:18.0279185Z Getting action download info
+mobile-test-job	Set up job	2026-10-16T08:22:18.2968604Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+mobile-test-job	Set up job	2026-10-16T08:22:18.4099801Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+mobile-test-job	Set up job	2026-10-16T08:22:18.5569013Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+mobile-test-job	Set up job	2026-10-16T08:22:19.3780789Z Complete job name: mobile-test-job
+mobile-test-job	1. Checkout Source Code	﻿2026-10-16T08:22:19.4473403Z ##[group]Run actions/checkout@v4
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4474583Z with:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4475618Z   repository: elgthinhnguyen/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4483012Z   token: ***
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4483877Z   ssh-strict: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4484674Z   ssh-user: git
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4485470Z   persist-credentials: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4486493Z   clean: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4487317Z   sparse-checkout-cone-mode: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4488247Z   fetch-depth: 1
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4489029Z   fetch-tags: false
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4489815Z   show-progress: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4490646Z   lfs: false
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4491409Z   submodules: false
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4492276Z   set-safe-directory: true
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4493181Z   allow-unsafe-pr-checkout: false
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.4494265Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5394820Z Syncing repository: elgthinhnguyen/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5398881Z ##[group]Getting Git version info
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5401329Z Working directory is '/home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7'
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5404411Z [command]/usr/bin/git version
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5448255Z git version 2.55.0
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5465012Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5489972Z Temporarily overriding HOME='/home/runner/work/_temp/4614770d-6846-42f6-98a4-31edcfe77ca0' before making global git config changes
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5494117Z Adding repository directory to the temporary git global config as a safe directory
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5497544Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5541837Z Deleting the contents of '/home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7'
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5550169Z ##[group]Initializing the repository
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5557427Z [command]/usr/bin/git init /home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5640188Z hint: Using 'master' as the name for the initial branch. This default branch name
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5642529Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5644196Z hint: to use in all of your new repositories, which will suppress this warning,
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5645517Z hint: call:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5646574Z hint:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5647529Z hint: 	git config --global init.defaultBranch <name>
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5648649Z hint:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5649655Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5651780Z hint: 'development'. The just-created branch can be renamed via this command:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5653340Z hint:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5654145Z hint: 	git branch -m <name>
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5654997Z hint:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5656265Z hint: Disable this message with "git config set advice.defaultBranchName false"
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5659094Z Initialized empty Git repository in /home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7/.git/
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5662473Z [command]/usr/bin/git remote add origin https://github.com/elgthinhnguyen/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5704593Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5706298Z ##[group]Disabling automatic garbage collection
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5709586Z [command]/usr/bin/git config --local gc.auto 0
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5736701Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5737996Z ##[group]Setting up auth
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5743755Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.5772978Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6058418Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6093800Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6260035Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6285257Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6439290Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6469057Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6471066Z ##[group]Fetching the repository
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.6477490Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +fd76ef772637b58154975d8713f64260c0251abd:refs/remotes/origin/main
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9051326Z From https://github.com/elgthinhnguyen/2312756_NguyenHungThinh_Lab7
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9053695Z  * [new ref]         fd76ef772637b58154975d8713f64260c0251abd -> origin/main
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9056691Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9058014Z ##[group]Determining the checkout info
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9059560Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9063882Z [command]/usr/bin/git sparse-checkout disable
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9107552Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9131561Z ##[group]Checking out the ref
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9143300Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9182528Z Switched to a new branch 'main'
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9187560Z branch 'main' set up to track 'origin/main'.
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9190162Z ##[endgroup]
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9220722Z [command]/usr/bin/git log -1 --format=%H
+mobile-test-job	1. Checkout Source Code	2026-10-16T08:22:19.9239762Z fd76ef772637b58154975d8713f64260c0251abd
+mobile-test-job	2. Set up Python Environment	﻿2026-10-16T08:22:19.9505506Z ##[group]Run actions/setup-python@v5
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9506372Z with:
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9506860Z   python-version: 3.11
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9507420Z   check-latest: false
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9513183Z   token: ***
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9513681Z   update-environment: true
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9514286Z   allow-prereleases: false
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9514847Z   freethreaded: false
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:19.9515360Z ##[endgroup]
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:20.0664826Z ##[group]Installed versions
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:20.2103021Z (node:2082) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:20.2106137Z (Use `node --trace-deprecation ...` to show where the warning was created)
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:20.2107791Z Successfully set up CPython (3.11.17)
+mobile-test-job	2. Set up Python Environment	2026-10-16T08:22:20.2110291Z ##[endgroup]
+mobile-test-job	3. Install Dependencies	﻿2026-10-16T08:22:20.2284620Z ##[group]Run python -m pip install --upgrade pip
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2286248Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2287464Z ^[[36;1mpip install -r requirements.txt^[[0m
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2896454Z shell: /usr/bin/bash -e {0}
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2897085Z env:
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2897736Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2898779Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2899758Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2900706Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2901607Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2902527Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:20.2903290Z ##[endgroup]
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:24.7449655Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages (26.2.1)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.2314299Z Collecting requests==2.31.0 (from -r requirements.txt (line 1))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.3091402Z   Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.6407666Z Collecting coverage==7.4.0 (from -r requirements.txt (line 2))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.6555612Z   Downloading coverage-7.4.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.1 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.6829834Z Collecting flake8==7.0.0 (from -r requirements.txt (line 3))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.6964252Z   Downloading flake8-7.0.0-py2.py3-none-any.whl.metadata (3.8 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.8016864Z Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r requirements.txt (line 1))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.8150499Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.8510161Z Collecting idna<4,>=2.5 (from requests==2.31.0->-r requirements.txt (line 1))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.8639050Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.8897340Z Collecting urllib3<3,>=1.21.1 (from requests==2.31.0->-r requirements.txt (line 1))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.9025177Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:26.9966828Z Collecting certifi>=2017.4.17 (from requests==2.31.0->-r requirements.txt (line 1))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.0098132Z   Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.0720554Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.0.0->-r requirements.txt (line 3))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.0850644Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.1729685Z Collecting pycodestyle<2.12.0,>=2.11.0 (from flake8==7.0.0->-r requirements.txt (line 3))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.1861950Z   Downloading pycodestyle-2.11.1-py2.py3-none-any.whl.metadata (4.5 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.2538600Z Collecting pyflakes<3.3.0,>=3.2.0 (from flake8==7.0.0->-r requirements.txt (line 3))
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.2664604Z   Downloading pyflakes-3.2.0-py2.py3-none-any.whl.metadata (3.5 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.3058723Z Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.3457220Z Downloading coverage-7.4.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (237 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.4044160Z Downloading flake8-7.0.0-py2.py3-none-any.whl (57 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.6840611Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.7634081Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.8129968Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.8435539Z Downloading pycodestyle-2.11.1-py2.py3-none-any.whl (31 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.8740760Z Downloading pyflakes-3.2.0-py2.py3-none-any.whl (62 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:27.9546385Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:28.0344810Z Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:28.1100038Z Installing collected packages: urllib3, pyflakes, pycodestyle, mccabe, idna, coverage, charset-normalizer, certifi, requests, flake8
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:29.9111781Z 
+mobile-test-job	3. Install Dependencies	2026-10-16T08:22:29.9137474Z Successfully installed certifi-2026.7.22 charset-normalizer-3.5.2 coverage-7.4.0 flake8-7.0.0 idna-3.20 mccabe-0.7.0 pycodestyle-2.11.1 pyflakes-3.2.0 requests-2.31.0 urllib3-2.8.0
+mobile-test-job	4. Static Code Analysis	﻿2026-10-16T08:22:30.0330842Z ##[group]Run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0331555Z ^[[36;1mflake8 . --count --select=E9,F63,F7,F82 --show-source --statistics^[[0m
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0371803Z shell: /usr/bin/bash -e {0}
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0372209Z env:
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0372520Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0372945Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0373387Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0373760Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0374164Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0374541Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:30.0374899Z ##[endgroup]
+mobile-test-job	4. Static Code Analysis	2026-10-16T08:22:31.5498509Z 0
+mobile-test-job	5. Execute Tests and Quality Gate	﻿2026-10-16T08:22:31.5711054Z ##[group]Run coverage run -m unittest discover -s . -p "test_*.py"
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5711538Z ^[[36;1mcoverage run -m unittest discover -s . -p "test_*.py"^[[0m
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5711957Z ^[[36;1mcoverage report -m^[[0m
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5712245Z ^[[36;1mcoverage html -d coverage_html^[[0m
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5712554Z ^[[36;1mcoverage report --fail-under=80^[[0m
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5747692Z shell: /usr/bin/bash -e {0}
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5748030Z env:
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5748328Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5748759Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5749157Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5749586Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5749984Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5750352Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:31.5750765Z ##[endgroup]
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.2304244Z ...........
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.2305058Z ----------------------------------------------------------------------
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.2305610Z Ran 11 tests in 0.002s
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.2306019Z 
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.2306203Z OK
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3094020Z Name                Stmts   Miss  Cover   Missing
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3094821Z -------------------------------------------------
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3095265Z gps_service.py          4      1    75%   6
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3095612Z test_yummy_app.py      49      1    98%   70
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3096307Z yummy_app.py           30      1    97%   35
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3096650Z -------------------------------------------------
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3097165Z TOTAL                  83      3    96%
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.3886745Z Wrote HTML report to coverage_html/index.html
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4574649Z Name                Stmts   Miss  Cover
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4575352Z ---------------------------------------
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4576028Z gps_service.py          4      1    75%
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4576637Z test_yummy_app.py      49      1    98%
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4577121Z yummy_app.py           30      1    97%
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4577565Z ---------------------------------------
+mobile-test-job	5. Execute Tests and Quality Gate	2026-10-16T08:22:32.4578002Z TOTAL                  83      3    96%
+mobile-test-job	6. Upload HTML Coverage Report Artifact	﻿2026-10-16T08:22:32.4725323Z ##[group]Run actions/upload-artifact@v4
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4725639Z with:
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4726064Z   name: YummyApp-Coverage-Report
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4726423Z   path: coverage_html/
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4726683Z   retention-days: 7
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4727007Z   if-no-files-found: warn
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4727280Z   compression-level: 6
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4727523Z   overwrite: false
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4727831Z   include-hidden-files: false
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4728247Z env:
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4728565Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4728992Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4729401Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4729786Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4730210Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4730584Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.4731002Z ##[endgroup]
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.6054692Z (node:2152) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.6055305Z (Use `node --trace-deprecation ...` to show where the warning was created)
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.6131071Z With the provided path, there will be 10 files uploaded
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.6136267Z Artifact name is valid!
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.6137898Z Root directory input is valid!
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.8862357Z Beginning upload of artifact content to blob storage
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:32.9139095Z (node:2152) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.0640513Z Uploaded bytes 31934
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.1040306Z Finished uploading artifact content to blob storage!
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.1042182Z SHA256 digest of uploaded artifact zip is 9f07663064b7b6f68454ed7e2bdbebacc682054a5911f23d681ed3d30e53622f
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.1043205Z Finalizing artifact upload
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.3483752Z Artifact YummyApp-Coverage-Report.zip successfully finalized. Artifact ID 12034206258
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.3485018Z Artifact YummyApp-Coverage-Report has been successfully uploaded! Final size is 31934 bytes. Artifact ID is 12034206258
+mobile-test-job	6. Upload HTML Coverage Report Artifact	2026-10-16T08:22:33.3490240Z Artifact download URL: https://github.com/elgthinhnguyen/2312756_NguyenHungThinh_Lab7/actions/runs/38873228748/artifacts/12034206258
+mobile-test-job	Post 2. Set up Python Environment	﻿2026-10-16T08:22:33.3619105Z Post job cleanup.
+mobile-test-job	Post 2. Set up Python Environment	2026-10-16T08:22:33.4629413Z (node:2165) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+mobile-test-job	Post 2. Set up Python Environment	2026-10-16T08:22:33.4630041Z (Use `node --trace-deprecation ...` to show where the warning was created)
+mobile-test-job	Post 1. Checkout Source Code	﻿2026-10-16T08:22:33.4792600Z Post job cleanup.
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5530750Z [command]/usr/bin/git version
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5566657Z git version 2.55.0
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5600196Z Temporarily overriding HOME='/home/runner/work/_temp/ec643277-eab8-4373-a59b-011a7b20be27' before making global git config changes
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5601166Z Adding repository directory to the temporary git global config as a safe directory
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5605776Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/2312756_NguyenHungThinh_Lab7/2312756_NguyenHungThinh_Lab7
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5638155Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5665538Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5853349Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5874270Z http.https://github.com/.extraheader
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5883048Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.5910582Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.6101428Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+mobile-test-job	Post 1. Checkout Source Code	2026-10-16T08:22:33.6128280Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+mobile-test-job	Complete job	﻿2026-10-16T08:22:33.6420237Z Cleaning up orphan processes
+mobile-test-job	Complete job	2026-10-16T08:22:33.6631423Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

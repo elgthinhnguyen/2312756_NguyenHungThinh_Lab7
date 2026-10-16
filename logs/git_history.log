@@ -1,0 +1,4 @@
+﻿* fd76ef7 - 2312756 - Nguyen Hung Thinh (2026-10-16 15:22:09 +0700): 2312756: sua loi linter va phuc hoi build
+* 0888a45 - 2312756 - Nguyen Hung Thinh (2026-10-16 15:22:04 +0700): 2312756: break the build de kiem tra linter
+* b74875d - 2312756 - Nguyen Hung Thinh (2026-10-16 15:21:46 +0700): 2312756: bo sung test mocking vuot quality gate
+* 32dfe7c - 2312756 - Nguyen Hung Thinh (2026-10-16 15:20:05 +0700): 2312756: khoi tao YummyApp va quality gate
