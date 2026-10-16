@@ -1,5 +1,7 @@
 import unittest
+from unittest.mock import patch
 
+import gps_service
 from yummy_app import YummyApp
 
 
@@ -21,6 +23,47 @@ class TestEasyLevel(unittest.TestCase):
     def test_calculate_total_with_zero_quantity(self):
         cart = {"pho": 0}
         self.assertEqual(self.app.calculate_order_total(cart), 0.0)
+
+
+class TestMediumLevel(unittest.TestCase):
+    def test_apply_valid_promo_code(self):
+        app = YummyApp(network_status="online", os_version=15)
+        self.assertEqual(app.apply_promo_code(100000, "GIAM10"), 90000)
+
+    def test_apply_promo_code_offline(self):
+        app = YummyApp(network_status="offline", os_version=15)
+        with self.assertRaises(ConnectionError):
+            app.apply_promo_code(100000, "GIAM10")
+
+    def test_apply_new_os_promo_on_os_15(self):
+        app = YummyApp(network_status="online", os_version=15)
+        self.assertEqual(app.apply_promo_code(100000, "NEW_OS_ONLY"), 80000)
+
+    def test_apply_new_os_promo_on_os_14(self):
+        app = YummyApp(network_status="online", os_version=14)
+        with self.assertRaises(ValueError):
+            app.apply_promo_code(100000, "NEW_OS_ONLY")
+
+
+class TestHardLevel(unittest.TestCase):
+    @patch("yummy_app.gps_service.get_current_location")
+    def test_get_nearby_restaurants_in_supported_area(self, mock_location):
+        mock_location.return_value = (10.0, 105.0)
+        expected = ["Nha hang Pho Ly Quoc Su", "Bun cha Huong Lien"]
+        self.assertEqual(YummyApp().get_nearby_restaurants(), expected)
+
+    @patch("yummy_app.gps_service.get_current_location")
+    def test_get_nearby_restaurants_outside_supported_area(self, mock_location):
+        mock_location.return_value = (20.0, 110.0)
+        self.assertEqual(YummyApp().get_nearby_restaurants(), [])
+
+    @patch("yummy_app.gps_service.get_current_location")
+    def test_get_nearby_restaurants_when_gps_signal_is_lost(self, mock_location):
+        mock_location.side_effect = gps_service.GPSSignalLostError
+        self.assertEqual(
+            YummyApp().get_nearby_restaurants(),
+            "Khong the xac dinh vi tri.",
+        )
 
 
 if __name__ == "__main__":
